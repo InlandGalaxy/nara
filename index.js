@@ -23,11 +23,14 @@ bot.on('message', async message => {
 
     switch (command) {
 
+
+
       case 'ping':
         let msg = await message.reply('Pinging...');
         await msg.edit(`PONG! Message round-trip took ${Date.now() - msg.createdTimestamp}ms.`)
         break;
-
+                
+              
       case 'say':
       case 'repeat':
         if (args.length > 0)
@@ -61,6 +64,7 @@ bot.on('message', async message => {
             embed
               .setColor('RED')
               .setDescription('This command does not exist. Please use the help command without specifying any commands to list them all.');
+          
           }
         }
         message.channel.send(embed);
@@ -68,6 +72,14 @@ bot.on('message', async message => {
     }
   }
 });
+
+/* Command for my gf so ignore. */
+bot.on("message", msg => {
+  if (msg.content === config.luv) {
+    msg.reply(config.hot);
+  }
+})
+  
 
 require('./server')();
 bot.login(config.token);
