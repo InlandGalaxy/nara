@@ -11,10 +11,5 @@ module.exports = {
     aliases: ['repeat'],
     description: 'Repeats whatever is said.',
     format: 'say <message>'
-  },
-  'steal': {
-    aliases: ['steal'],
-    description: 'Steals an Emoni.',
-    format: 'steal <message>'
   }
 }
