@@ -1,6 +1,8 @@
 # nara Bot
 This Bot is for various needs and gets updated in the future. This Project is open source and a invite for the Bot itself gets released later. Until then the version of the Bot that is hosted by me is private.
 
+To check if the version of the bot that I host is online: https://nara.status.inlandgalaxy.ch
+
 ## Old Readme of the template I used (Will be deleted later)
 
 ### Setup
